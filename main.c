@@ -1,31 +1,13 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    float num1, num2, num3, average;
+    printf("Enter three numbers: ");
+    scanf("%f %f %f", &num1, &num2, &num3);
+    average = (num1 + num2 + num3) / 3;
+    printf("The average of %.2f, %.2f, and %.2f is: %.2f\n", num1, num2, num3, average);
 
 
-void swap(int *p,int *q)
-{
-
-    int tmp;
-    tmp = *p;
-    *p=*q;
-    *q=tmp;
-}
-int main()
-{
-    int n,m;
-    //int n1=3;
-    //int n2=4;
-    printf("\n\n Function : swap two numbers using function :\n");
-    printf("------------------------------------------------\n");
-    printf("Input 1st number : ");
-    scanf("%d",&n);
-    printf("Input 2nd number : ");
-    scanf("%d",&m);
-
-    printf("Before swapping: n = %d, m = %d ",n,m);
-    //pass the address of both variables to the function.
-    swap(&n,&m);
-
-    printf("\nAfter swapping: n = %d, m = %d \n\n",n,m);
     return 0;
 }
-
